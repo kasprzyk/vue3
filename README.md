@@ -1,4 +1,4 @@
-# rection-timer
+# project-planner
 
 ## Project setup
 ```
