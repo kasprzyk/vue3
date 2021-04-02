@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <FilterNav :current="current" @filterChange="current = $event" />
     <div v-if="projects.length">
       <div v-for="project in projects" :key="project.id">
         <SingleProject :project="project" @delete="handleDelete" @complete="handleComplete" />
@@ -10,15 +11,17 @@
 
 <script>
 import SingleProject from '../components/SingleProject';
+import FilterNav from '../components/FilterNav';
 // @ is an alias to /src
 
 export default {
   name: 'Home',
   components: {
-    SingleProject
+    SingleProject,
+    FilterNav
   },
   data() {
-    return { projects: [] };
+    return { projects: [], current: 'all' };
   },
   mounted() {
     fetch('http://localhost:3000/projects')
@@ -41,3 +44,5 @@ export default {
   }
 };
 </script>
+
+<style></style>
