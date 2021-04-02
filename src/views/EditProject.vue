@@ -20,7 +20,7 @@ export default {
   },
   mounted() {
     fetch(this.uri)
-      .then(res => res.json)
+      .then(res => res.json())
       .then(data => {
         this.title = data.title;
         this.details = data.details;

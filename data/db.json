@@ -1,6 +1,22 @@
 {
-    "projects": [
-        {"id": 1, "title": "Create new homepage banner", "details": "test", "complete": false},
-        {"id": 2, "title": "Make marketing email", "details": "test", "complete": true}
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create new homepage banner",
+      "details": "test",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Make marketing email",
+      "details": "test",
+      "complete": true
+    },
+    {
+      "title": "123",
+      "details": "asd",
+      "complete": false,
+      "id": 3
+    }
+  ]
 }
